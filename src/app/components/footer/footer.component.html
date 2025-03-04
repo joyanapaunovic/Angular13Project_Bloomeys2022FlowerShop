@@ -1,0 +1,125 @@
+
+<!-- Footer -->
+<section id="footer" class="wrapper">
+    <div class="title">CONTACT US</div>
+    <div class="container">
+        <header class="style1">
+            <h2 class="contact-title">We'd love to hear from you</h2>
+            <!-- <p>
+                Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
+                Nam pharetra laoreet imperdiet volutpat etiam feugiat.
+            </p> -->
+        </header>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-12-medium">
+
+                <!-- Contact Form -->
+                    <section>
+                        <form [formGroup]="form">
+                            <div class="row gtr-50">
+                                <div class="col-6 col-12-small">
+                                    <!-- FIRST NAME -->
+                                    <input type="text" name="name" id="contact-name" placeholder="First name..." formControlName='firstName'/>
+                                    <ng-container *ngIf="(this.form.get('firstName')?.touched) && form.get('firstName')?.hasError('required')">
+                                        <span class="message">* First name is a required field.</span>
+                                    </ng-container>
+                                    <ng-container *ngIf="form.get('firstName')?.hasError('pattern')">
+                                        <span class="message">* First name needs to have at least 3 characters.</span>
+                                    </ng-container>
+                                </div>
+                                <div class="col-6 col-12-small">
+                                    <!-- LAST NAME -->
+                                    <input type="text" name="name" id="contact-last-name" placeholder="Last name..." formControlName='lastName'/>
+                                    <ng-container *ngIf="(this.form.get('lastName')?.touched) && form.get('lastName')?.hasError('required')">
+                                        <span class="message">* Last name is a required field.</span>
+                                    </ng-container>
+                                    <ng-container *ngIf="form.get('lastName')?.hasError('pattern')">
+                                        <span class="message">* Last name needs to have at least 3 characters.</span>
+                                    </ng-container>
+                                </div>
+                                <div class="col-12">
+                                    <!--  E-MAIL -->
+                                    <input type="text" name="email" id="contact-email" placeholder="E-mail..." formControlName='email' />
+                                    <ng-container *ngIf="(this.form.get('email')?.touched) && (form.get('email')?.hasError('required'))">
+                                        <span class="message">* E-mail is a required field.</span>
+                                    </ng-container>
+                                    <ng-container *ngIf="form.get('email')?.hasError('email')">
+                                        <span class="message">* E-mail is not in a valid format.</span>
+                                    </ng-container>
+                                </div>
+                                <div class="col-12">
+                                    <!--  MESSAGE  -->
+                                    <textarea name="message" id="contact-message" placeholder="Message..." rows="4" formControlName='message'></textarea>
+                                        <ng-container *ngIf="(this.form.get('message')?.touched) &&form.get('message')?.hasError('required')">
+                                            <span class="message">* Message is a required field.</span>
+                                        </ng-container>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="button" class="style1" value="Send" (click)='checkForm()'/></li>
+                                        <!-- <li><input type="reset" class="style2" value="Reset" /></li> -->
+                                    </ul>
+                                </div>
+                                <!-- <p [ngClass]="this.form.invalid ? 'not-success' : 'success'"> -->
+                                  <p class="success">
+                                    {{ this.messageIsSuccessful }}
+                                  </p>
+                            </div>
+                        </form>
+                    </section>
+
+            </div>
+            <div class="col-6 ">
+
+                <!-- Contact -->
+                    <section class="feature-list small">
+                        <div class="row">
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-home">Our Address</h3>
+                                    <p>
+                                        8863 Rockville St.<br />
+                                        New York, NY 10011<br />
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-comment">Social</h3>
+                                    <p>
+                                        <a href="https://www.instagram.com/">Instagram</a><br />
+                                        <a href="https://www.facebook.com/">Facebook</a><br />
+                                        <a href="https://twitter.com/">Twitter</a><br/>
+                                        <!-- <a href="https://www.pinterest.com/">Pinterest</a> -->
+                                        <a href="assets/dokumentacija.pdf" target="_blank">Documentation</a>
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-envelope">Email</h3>
+                                    <p>
+                                        <a href="mailto:bloomeys@gmail.com">bloomeys&#64;gmail&#46;com</a>
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="col-6 col-12-small">
+                                <section>
+                                    <h3 class="icon solid fa-phone">Phone</h3>
+                                    <p>
+                                        <a href="tel:+123456789">+123456789</a>
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+            </div>
+        </div>
+        <div id="copyright">
+            <ul>
+                &copy;<li class="font-logo"> Bloomey's.</li><li>2022.</li>
+            </ul>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,93 @@
+<!-- Main -->
+<section id="main" class="wrapper style2">
+    <div class="title">OUR OFFER</div>
+    <div class="container">
+        <div class="row gtr-150">
+            <div class="col-lg-4 col-md-12">
+
+                <!-- SIDEBAR => CATEGORIES -->
+                    <div id="sidebar">
+                        <section class="box">
+                            <ul class=" shop-list">
+                                <h5 class="title-shop-categories mb-4">Let someone know you care</h5>
+                                    <ng-container *ngFor="let t of types">
+                                        <li class="mt-3">
+                                            <article class="box">
+                                                <a routerLinkActive="active-category" #category="routerLinkActive" (click)="showNumberCircled(category, t.id)" class='d-flex flex-row on-hover' routerLink="/shop/{{ t.id }}">
+                                                    <p class="id-circled">{{ t.id }}. </p> <p class="mt-3">{{ t.type }}</p>
+                                                </a>
+                                            </article>
+                                        </li>
+                                    </ng-container>
+                                    <li class="mt-3">
+                                        <article class="box">
+                                            <a class='d-flex flex-row on-hover' routerLink="/shop">
+                                                 <p class="mt-3 default">Default</p>
+                                            </a>
+                                        </article>
+                                    </li>
+                            </ul>
+                        </section>
+                    </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+
+                <!-- Content -->
+                    <div id="content">
+                        <div class="row gtr-150">
+                            <!-- INICIJALAN PRIKAZ -->
+                            <ng-container *ngIf="this.route.url == '/shop'; else anotherChoice">
+                                <ng-container *ngFor="let flower of flowers">
+                                    <div class="col-lg-6 col-xs-12 flower mt-2">
+                                        <section class="box">
+                                            <header>
+                                                <h2>{{ flower.flowerName }}</h2>
+                                            </header>
+                                            <a class="image featured"><img src="../../../assets/images/{{ flower.image.src }}" alt="{{ flower.image.alt }}" /></a>
+                                            <!-- prikaz odredjenog cveta -->
+                                            <div class=" mt-3 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                                <a routerLink="/single-flower/{{ flower.id }}" class="button style1 btn-more">See More</a>
+                                                <p class="price-shop">
+                                                    {{flower.price.currentPrice | currency}}
+                                                    <ng-container *ngIf='flower.price.oldPrice'>
+                                                        <p><s class="mt-2">{{flower.price.oldPrice | currency}}</s></p>
+                                                    </ng-container>
+                                                </p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </ng-container>
+                            </ng-container>
+                            <!-- KADA JE PROSLEDJEN ID KATEGORIJE -->
+                            <ng-template #anotherChoice>
+                                <ng-container *ngFor="let flower of flowers">
+                                    <ng-container *ngIf="flower.typeId == this.idCategory">
+                                        <div class="col-lg-6 col-xs-12 flower mt-2">
+                                            <section class="box">
+                                                <header>
+                                                    <h2>{{ flower.flowerName }}</h2>
+                                                </header>
+                                                <a class="image featured"><img src="../../../assets/images/{{ flower.image.src }}" alt="{{ flower.image.alt }}" /></a>
+                                                
+                                                <div class=" mt-3 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                                    <a routerLink="/single-flower/{{ flower.id }}" class="button style1">See More</a>
+                                                    <p class="price-shop">
+                                                        {{flower.price.currentPrice | currency}}
+                                                        <ng-container *ngIf='flower.price.oldPrice'>
+                                                            <p><s class="mt-2">{{flower.price.oldPrice | currency}}</s></p>
+                                                        </ng-container>
+                                                    </p>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
+                            </ng-template>
+                        </div>
+                    </div>
+
+            </div>
+           
+        </div>
+    </div>
+</section>

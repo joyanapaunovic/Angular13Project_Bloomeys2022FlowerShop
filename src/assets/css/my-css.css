@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); font for logo */
+@import url('http://fonts.cdnfonts.com/css/antro-vectra');
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* logo */
+.logo-link {
+    text-decoration: none !important;
+}
+.logo {
+    font-family: 'Antro Vectra', sans-serif;
+    margin-bottom:2px !important;
+    color: rgba(255, 255, 255, 0.575);
+    font-size: 33.2px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+.font-logo {
+    font-family: 'Antro Vectra', sans-serif;
+    font-size: 20px;
+}
+
+.style2 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.pb-2 {
+    font-size: 16px;
+    padding-bottom: 10px !important;
+}
+.style1 .contact-title {
+    text-transform: uppercase;
+    letter-spacing: 5px !important;
+    color: rgba(255, 255, 255, 0.329) !important;
+}
+.add-fixed {
+    background-attachment: fixed !important;
+    /* background-position: center bottom !important; */
+}
+.color-pink {
+    color: #e97770;
+}
+/* video size => about us */
+video {
+    max-width: 100%;
+    height: auto;
+}
+/* textarea */
+#contact-message {
+    resize: none !important;
+}

@@ -1,0 +1,57 @@
+/* IMAGE */
+.image-flower {
+    width: 700px;
+}
+.image-flower img {
+    width: 100%;
+}
+/* FLOWER NAME */
+.name-flower {
+    font-size: 30px;
+    font-weight: bold;
+    font-weight: bold !important;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+    margin-bottom: 5px;
+    /* margin-top:  15px !important; */
+    font-family: 'Antro Vectra', sans-serif;
+}
+.price {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+}
+/* BORDER */
+.flower-information {
+    border: 1px solid rgba(128, 128, 128, 0.176);
+    border-radius: 4px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+.logo-link {
+    text-decoration: none !important;
+}
+.logo {
+    font-family: 'Antro Vectra', sans-serif;
+    color: rgba(128, 128, 128, 0.505);
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;   
+    margin-bottom:18px;
+    margin-top: -22px;
+}
+h5, .type{
+    font-size: 19px;
+    font-family: 'Antro Vectra', sans-serif;
+}
+.type {
+    font-size: 22.7px;
+    font-family: 'Antro Vectra', sans-serif;
+    /* color: #000; */
+}
+s {
+    text-decoration-color: rgba(0, 0, 0, 0.343);
+}
+p.old-price {
+    color:rgba(128, 128, 128, 0.496);
+}

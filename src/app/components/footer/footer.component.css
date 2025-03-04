@@ -1,0 +1,29 @@
+.style1 .contact-title {
+    text-transform: uppercase;
+    letter-spacing: 5px !important;
+    color: rgba(255, 255, 255, 0.329) !important;
+}
+/* textarea */
+#contact-message {
+    resize: none !important;
+}
+.font-logo {
+    font-family: 'Antro Vectra', sans-serif;
+    font-size: 20px;
+}
+.message {
+    color: #ffffff56;
+    font-size: 12px;
+}
+/* .not-success {
+    color: red;
+}
+.success {
+    color: green;
+} */
+
+.success {
+    color:#fff;
+    /* font-size: 18px;
+    font-family: 'Antro vectra', sans-serif; */
+}

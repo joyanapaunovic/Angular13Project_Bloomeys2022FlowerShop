@@ -1,0 +1,20 @@
+<!-- NAVIGATION -->
+<nav id="nav">
+    <a routerLink="/home" class="logo-link">
+        <h2 class="d-flex flex-row align-items-center justify-content-center mt-2  text-center logo">Bloomey's</h2>
+    </a>
+    <ul class="mt-2">
+        <!-- <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="#footer">Contact</a></li> -->
+        <ng-container *ngFor="let link of navigationLinks;">
+            <li>
+                <a routerLinkActive="active" routerLink="{{ link.route }}">{{ link.linkName }}</a>
+            </li>
+        </ng-container>
+        <!-- ne vodi na novu rutu, zato je izdvojeno, gadja div u footer-u -->
+        <!-- <li><a [routerLink]="this.router.url" fragment="footer">Contact</a></li> -->
+        <li><a [href]="getToDivId()">Contact</a></li>
+    </ul>
+</nav>

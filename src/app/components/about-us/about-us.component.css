@@ -1,0 +1,17 @@
+/* video size => about us */
+video {
+    max-width: 100% !important;
+    height: auto;
+}
+.pb-2 {
+    font-size: 16px;
+    padding-bottom: 10px !important;
+}
+.color-pink {
+    color: #e97770;
+    margin-top: 30px;
+}
+.occassion-list li .box h3 a:hover  {
+    color: rgba(0, 0, 0, 0.668);
+    opacity: 0.7;
+}

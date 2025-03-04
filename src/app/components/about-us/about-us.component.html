@@ -1,0 +1,78 @@
+
+<!-- Main -->
+<section id="main" class="wrapper style2">
+    <div class="title">ABOUT US</div>
+    <div class="container">
+        <div class="row gtr-150">
+            <div class="col-4 col-12-medium d-none d-lg-block">
+
+                <!-- Sidebar -->
+                    <div id="sidebar">
+                        <section class="box d-none d-lg-block">
+                            <!-- <header>
+                                <h2>Ipsum nullam luctus</h2>
+                            </header> -->
+                            <p>Propelled by our affection for flowers and energy about nature, it is our obsession to make creative and noteworthy plant and new flower courses of action. We trust that the best, freshest flowers deliver the most noteworthy presentations.</p>
+                            <!-- <a href="#" class="button style1">Learn More</a> -->
+                        </section>
+                        <section class="box col-sm-12 d-none d-lg-block">
+                            <header>
+                                <h2 class="color-pink">FOR EVERY OCCASSION</h2>
+                            </header>
+                            <ul class="style2 occassion-list">
+                               <ng-container *ngFor="let t of types">
+                                    <li>
+                                        <article class="box ">                                            
+                                            <h3><a routerLink="/shop/{{ t.id }}">{{ t.type }}</a></h3>
+                                        </article>
+                                    </li>
+                               </ng-container>
+                                
+                            </ul>
+                        </section>
+                    </div>
+
+            </div>
+            <div class="col-8 col-12-medium imp-medium">
+
+                <!-- Content -->
+                    <div id="content col-md-12">
+                        <article class="box post">
+                            <div class="row col-lg-12">
+                                <video controls autoplay loop muted>
+                                    <source src="assets/videos/video-aboutus.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <span>‎ </span>
+                            <p class="pb-2">Bloomey’s is glad to give quality flowers and plants to our customers. 
+                                Our retail premises opened in 2012 after much interest from the 
+                                London open who respected our orchids at the Chelsea Flower Show.</p>
+
+                            <p class="pb-2">From that point forward, we have bloomed into a full administration 
+                                flower specialist with both private and corporate customers.
+                            </p>
+                            <p class="pb-2">We owe quite a bit of our prosperity to our extraordinary customers who move us to make unique and dazzling structures.
+                                 Our master staff is here to enable all customers to pick the best flowers and plants for all events and purposes.
+                            </p>
+                            <p class="pb-2">Since the primary orchid achieved Europe in 1515, its uncommon and fragile excellence has made it 
+                                an image of extravagance and polish. 
+                                Today there are more than 30,000 perceived types of orchids – with an astonishing 
+                                300 new assortments found every year – and Bloomey’s offers 
+                                probably the most beautiful and fantastic blossoms accessible.</p>
+                                <p class="pb-2">
+                                    The majority of our clients are vital, our expert staff is committed to making your experience a lovely one. That is the reason we generally go the additional mile to make your botanical blessing immaculate. 
+                                    Give us a chance to be your first decision for flowers.
+                                </p>
+                                <p class="pb-2">
+                                    With such a large number of flower vendors, 
+                                    700 numbers, sites, and botanical requesting 
+                                    administrations thus many markdown and mileage programs, 
+                                    for what reason would it be advisable for you to pick Bloomey’s for all your flower needs? We are proficient flower specialists – not telemarketers.
+                                </p>
+                        </article>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>

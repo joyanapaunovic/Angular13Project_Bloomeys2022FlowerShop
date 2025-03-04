@@ -1,0 +1,43 @@
+<!-- Intro -->
+<section id="intro" class="wrapper style1">
+    <div class="title"> WELCOME </div>
+    <div class="container">
+        <p class="style1 mb-5 add-font">We understand the importance of the moment. </p>
+        <p class="style2 p-5">
+            When you put in a request with Bloomey’s, you need it to be done well – crisp enduring flowers, excellent courses of action, convenient conveyance, and every one of the intangibles that make our clients consider us the “Best in New York City.” 
+            We by and by taking care of each request; we don’t abandon it to a PC.
+        </p>
+        <p class="mt-4">Wherever your request is going – Queens or anyplace in New York, NY or, the U.S. 
+            or then again the world – you have our fulfillment ensure: We endeavor to dispatch each request precisely as asked. 
+            In the event that anything isn’t right, 
+            we’ll make a provoke substitution or redelivery and do everything we can to redress the circumstance.</p>
+        
+    </div>
+</section>
+
+<!-- Main -->
+<!-- Highlights -->
+
+<section id="highlights" class="wrapper style3">
+    <div class="title">our flowers</div>
+    <div class="container">
+        <div class="row aln-center">
+            <ng-container *ngFor="let flower of flowers">
+            <ng-container *ngIf="flower.price.oldPrice != null && flower.availability == true">
+                    <section class="highlight m-4 col-lg-3" >
+                        <a class="image featured"><img src="assets/images/{{flower.image.src}}" alt="{{flower.image.alt}}" /></a>
+                        <h3 class="name">{{flower.flowerName}}</h3>
+                        <p class="mb-3 change-font">
+                            <span class="p-2">{{flower.price.currentPrice | currency}}</span>
+                            <s class="color p-2">{{flower.price.oldPrice | currency}}</s>
+                        </p>
+                        <ul class="actions">
+                            <li><a href="single-flower/{{flower.id}}" class="button style1">See More</a></li>
+                        </ul>
+                    </section>
+            </ng-container>
+        </ng-container>
+           
+        </div>
+    </div>
+</section>

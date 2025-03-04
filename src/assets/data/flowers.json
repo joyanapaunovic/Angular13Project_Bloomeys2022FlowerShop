@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "flowerName": "Bouquet of 15 red roses",
+        "price": {
+            "currentPrice": 29.86,
+            "oldPrice": 43.00
+        },
+        "image": {
+            "src": "red-roses.png",
+            "alt": "Red roses"
+        },
+        "description": "A charming bouquet made of red roses and alstroemeria with a decoration of trefern and shamalacium will bring beautiful energy to any occasion, convey sincere congratulations to friends, and delight your loved one.",
+        "typeId": 2,
+        "availability": true
+    }, 
+    {
+        "id": 2,
+        "flowerName": "Cactus",
+        "price": {
+            "currentPrice": 96.04,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "cactus.jpg",
+            "alt": "Cactus"
+        },
+        "description": "Cacti need as much light as possible to grow and bloom, but they must not be exposed to strong sun all day. That is why the ideal position is a window, balcony or garden on the southeast side. Cacti are gradually brought into the light after winter, and with the first heat they are removed from direct sunlight.",
+        "typeId": 4,
+        "availability": true
+    },
+    {
+        "id": 3,
+        "flowerName": "Flower arrangement in a basket",
+        "price": {
+            "currentPrice": 46.92,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "flower-arragments.png",
+            "alt": "Flower arragment in a basket"
+        },
+        "description": "Flowers in a wooden basket. The ideal gift for a celebration. Contains orchids, roses, lisianthus, green chrysanthemums.",
+        "typeId": 1,
+        "availability": true
+    },
+    {
+        "id": 4,
+        "flowerName": "White roses bouquet",
+        "price": {
+            "currentPrice": 29.86,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "white-roses.png",
+            "alt": "White roses bouquet"
+        },
+        "description": "A bouquet with white roses is ideal when you want to express the most wonderful feelings for a gentle person you care about. Open your heart, declare your love, and a flower gift is here to open your love path.",
+        "typeId": 2,
+        "availability": false
+    }, 
+    {
+        "id": 5,
+        "flowerName": "White and orange casket spray",
+        "price": {
+            "currentPrice": 85.31,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "casket-spray.jpg",
+            "alt": "white and orange casket spray"
+        },
+        "description": "A casket spray is a bouquet of flowers that is specifically made to send to a funeral home to help mourn the loss of a loved one.",
+        "typeId": 5,
+        "availability": true
+    },
+    {
+        "id": 6,
+        "flowerName": "Monstera plant",
+        "price": {
+            "currentPrice": 60.00,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "plant-monstera.jpg",
+            "alt": "Monestera plant"
+        },
+        "description": "Monstera is sold in a basket. Upgrade pot by calling the store. Sunlight Thrives in bright to medium indirect light. Not suited for intense, direct sun. Water Water weekly. Allow potting mix to dry out before watering. Soil about 1-2” down should be dry to touch. Water more frequently during warmer months and fertilize during growth. Humidity Normal room humidity will do, but prefers humid conditions if possible. Temperature 65°F-85°F (18°C-30°C). It’s best not to let it go below 60°F (15°C).",
+        "typeId": 4,
+        "availability": true
+    },
+    {
+        "id": 7,
+        "flowerName": "Biedemeier",
+        "price": {
+            "currentPrice": 55.46,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "biedemeier.png",
+            "alt": "Biedemeier"
+        },
+        "description": "Hand bonded Biedermeier bruidsboeket with white roses, Ornithogalum, berengrass and strass decoration.",
+        "typeId": 3,
+        "availability": true
+    },
+    {
+        "id": 8,
+        "flowerName": "Bear in a box",
+        "price": {
+            "currentPrice": 60.56,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "bear-in-a-box.png",
+            "alt": "Bear in a box"
+        },
+        "description": "Dehydrated roses, honey and Ferrero rocher balls - the perfect combination for a gift to a beloved lady for her birthday, Women's Day, Valentine's Day or when you want to brighten her day and put a smile on her face.",
+        "typeId": 6,
+        "availability": true
+    }, 
+    {
+        "id": 9,
+        "flowerName": "Orange roses",
+        "price": {
+            "currentPrice": 29.86,
+            "oldPrice": null
+        },
+        "image": {
+            "src": "orange-roses.png",
+            "alt": "Orange roses"
+        },
+        "description": "In history, the original roses only existed in shades of white, pink, and red. People enjoyed these colors which were even considered as classics but there’s always a thirst for something different. That is why breeders sought to introduce new colors and varieties to further improve and widen the marketability of roses. Today, numerous orange roses have become available with shades ranging from soft coral to peach to vivid tangerine. Orange roses truly gave the traditional rose a fresher and sensational twist.",
+        "typeId": 2,
+        "availability": true
+    },
+    {
+        "id": 10,
+        "flowerName": "Flower arrangement in a basket",
+        "price": {
+            "currentPrice": 38.17,
+            "oldPrice": 46.65
+        },
+        "image": {
+            "src": "flower-arragment-in-a-basket.png",
+            "alt": "Flower arragment in a wooden basket"
+        },
+        "description": "Flowers in a wooden basket. The ideal gift for a celebration. Contains orchids, roses, lisianthus, green chrysanthemums.",
+        "typeId": 1,
+        "availability": true
+    }, 
+    {
+        "id": 12,
+        "flowerName": "Philodendron Pink Princess",
+        "price": {
+            "currentPrice": 40.17,
+            "oldPrice": 50.55
+        },
+        "image": {
+            "src": "pink-princess.jpg",
+            "alt": "Philodendron Pink Princess"
+        },
+        "description": "The gorgeous and highly sought after pink princess philodendron (Philodendron erubescens ‘pink princess’) is at the top of many plant collector’s wish lists, and for good reason. Characterized by deep green, heart-shaped leaves with bubblegum pink variegation, the pink princess is truly unique in the plant world. While it can be easily confused with the Philodendron pink congo, the variegation of the pink princess is stable as it occurs due to natural processes, whereas the pink congo variegation is a result of chemicals that are injected into the leaves, usually reverting back to green a couple months after being purchased.",
+        "typeId": 4,
+        "availability": true
+    },
+    {
+        "id": 13,
+        "flowerName": "Monstera Adansonii",
+        "price": {
+            "currentPrice": 37.17,
+            "oldPrice": 46.65
+        },
+        "image": {
+            "src": "monstera-adansonii.jpg",
+            "alt": "  Monstera Adansonii"
+        },
+        "description": "The Swiss cheese plant (Monstera adansonii) gets its common name from its large, heart-shaped leaves that develop holes as the plant ages (in a process called fenestration). This makes the leaves resemble Swiss cheese. Native to Central and South America, the Swiss cheese plant is a tropical perennial that's typically grown as an indoor plant.",
+        "typeId": 4,
+        "availability": false
+    }
+]

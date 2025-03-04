@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "type": "Flower arrangments"
+    },
+    {
+        "id": 2,
+        "type": "Bouquets"
+    },
+    {
+        "id": 3,
+        "type": "Biedermeiers"
+    },
+    {
+        "id": 4,
+        "type": "Potted flowers"
+    },
+    {
+        "id": 5,
+        "type": "Sad moments"
+    },
+    {
+        "id": 6,
+        "type": "Special orders"
+    }
+]
